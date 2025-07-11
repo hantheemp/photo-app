@@ -1,11 +1,12 @@
 import { Button, Group } from "@mantine/core";
 
-interface GlobalButtonProps {
+interface GlobalButtonInterface {
   icon: React.ReactNode;
   iconAlignment: "left" | "right";
+  iconSize: Number;
 }
 
-export default function GlobalButton({ icon, iconAlignment }: GlobalButtonProps) {
+export default function GlobalButton({ icon, iconAlignment, }: GlobalButtonInterface) {
   return (
     <Group justify="center">
       <Button
